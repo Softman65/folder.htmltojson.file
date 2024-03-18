@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Softman65/tailwind.html2json.templates.lib/issues"
   },
-  "homepage": "https://github.com/Softman65/tailwind.html2json.templates.lib#readme"
+  "homepage": "https://github.com/Softman65/tailwind.html2json.templates.lib#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
 }
