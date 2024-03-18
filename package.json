@@ -1,0 +1,23 @@
+{
+  "name": "tailwind.html2json.templates.lib",
+  "version": "1.0.0",
+  "description": "convert tailwidcss to html2json folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Softman65/tailwind.html2json.templates.lib.git"
+  },
+  "keywords": [
+    "tailwidcss",
+    "html2json"
+  ],
+  "author": "Ricardo Benitez Pelletier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Softman65/tailwind.html2json.templates.lib/issues"
+  },
+  "homepage": "https://github.com/Softman65/tailwind.html2json.templates.lib#readme"
+}
