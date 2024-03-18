@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Softman65/tailwind.html2json.templates.lib#readme",
   "dependencies": {
+    "puppeteer": "^22.5.0",
     "tailwindcss": "^3.4.1"
   }
 }
