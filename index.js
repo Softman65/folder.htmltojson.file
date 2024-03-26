@@ -1,8 +1,10 @@
+//debugger
+
 const puppeteer = require('puppeteer');
 const {readFileSync, writeFileSync , existsSync , watch } = require('node:fs');
 const path = require('node:path');
 
-//process.exit()
+//debugger
 
 (async () => {
     console.log(process.cwd())
