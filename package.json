@@ -1,6 +1,6 @@
 {
   "name": "folder.htmltojson.file",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "convert folder tailwidcss html files to jsonfile",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "url": "git+https://github.com/Softman65/folder.htmltojson.file.git"
   },
   "keywords": [
-    "tailwidcss",
-    "html2json"
+    "html2json",
+    "templates"
   ],
   "author": "Ricardo Benitez Pelletier",
   "license": "ISC",
@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/Softman65/folder.htmltojson.file#readme",
   "dependencies": {
-    "puppeteer": "^22.5.0",
-    "tailwindcss": "^3.4.1"
+    "puppeteer": "^22.5.0"
   }
 }
