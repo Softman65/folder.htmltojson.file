@@ -2,7 +2,6 @@ const puppeteer = require('puppeteer');
 const {readFileSync, writeFileSync , existsSync , watch } = require('node:fs');
 const path = require('node:path');
 
-//process.exit()
 module.exports =async (params)=>{
     console.log(process.cwd())
 
@@ -10,17 +9,8 @@ module.exports =async (params)=>{
         const file = readFileSync(path.resolve( `${__dirname}/jsClient`, nameScfFile), 'utf8');
         await page.addScriptTag({ content: file , type:'module' });
     }
-
-
-    const paramsBrow = {
-        headless: true,
-       // args: ['--no-startup-window', '--no-first-run'],
-    }
-    //const browser = await puppeteer.launch(paramsBrow)
-    //const pages = await browser.pages();  
-    //debugger 
     
-    //console.log(process.argv,pages)
+  
     const openInBrowser= async(fileIn, fileOut)=>{
         const browser = await puppeteer.launch(params.puppeter)
         const pages = await browser.pages();
@@ -42,10 +32,10 @@ module.exports =async (params)=>{
         
     }
     const processingFile = async (_out, _file)=>{
-       // let cwd = process.cwd()
+
         let root = _file.split('.')
         root.pop()
-        //console.log(root)
+
         let fileIn = `${process.InFolder}/${_file}`
         let fileOut = `${_out}/${root.join('.')}.json`
 
@@ -68,14 +58,13 @@ module.exports =async (params)=>{
         }
         
     }
-    //const _watch = process.argv[6] == 'watch'
+
     // output JSON
     const OutFolder = path.normalize(`${process.cwd()}/${params.path.out}`)
     if (!existsSync(OutFolder)){
         console.error (`no existe folder OUT TEMPLATE ${FileArrayTemplates} JSON `)
         process.exit()
     }
-    //let $templates = JSON.parse( readFileSync( FileArrayTemplates ))
     process.InFolder = path.normalize(`${process.cwd()}/${params.path.in}`)
 
     console.log('infolder', process.InFolder)
